@@ -1,0 +1,7 @@
+Running: xsim.dir/NSM_simulation_behav/xsimk.exe -simmode gui -wdb NSM_simulation_behav.wdb -simrunnum 0 -socket 51287
+Design successfully loaded
+Design Loading Memory Usage: 9280 KB (Peak: 9280 KB)
+Design Loading CPU Usage: 265 ms
+Simulation completed
+Simulation Memory Usage: 9948 KB (Peak: 9948 KB)
+Simulation CPU Usage: 295 ms

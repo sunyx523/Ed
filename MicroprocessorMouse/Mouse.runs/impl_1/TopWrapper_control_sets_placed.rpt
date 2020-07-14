@@ -1,0 +1,92 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Mar 13 09:25:57 2020
+| Host         : SUN-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file TopWrapper_control_sets_placed.rpt
+| Design       : TopWrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |    54 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              99 |           44 |
+| Yes          | No                    | No                     |              17 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             221 |           73 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  Clock Signal  |                    Enable Signal                   |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG | MD/TR/MSM/SendInterrupt                            | RESET_IBUF                              |                2 |              4 |
+|  CLK_IBUF_BUFG | MD/TR/T/FSM_sequential_Curr_State_reg[3]_i_1_n_0   | RESET_IBUF                              |                1 |              4 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/FSM_sequential_Curr_State[3]_i_1_n_0     | RESET_IBUF                              |                2 |              4 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/MouseX_reg[0]                            | MD/TR/MouseX[3]_i_1_n_0                 |                1 |              4 |
+|  CLK_IBUF_BUFG | MicroProcessor/CurrProgCounter[3]_i_1_n_0          | RESET_IBUF                              |                2 |              4 |
+|  CLK_IBUF_BUFG | MicroProcessor/E[0]                                | RESET_IBUF                              |                1 |              4 |
+|  CLK_IBUF_BUFG | MD/TR/R/Next_BitCounter                            | RESET_IBUF                              |                2 |              4 |
+|  CLK_IBUF_BUFG | MicroProcessor/NextProgContext                     | RESET_IBUF                              |                1 |              4 |
+|  CLK_IBUF_BUFG | MicroProcessor/FSM_sequential_CurrState[4]_i_1_n_0 | RESET_IBUF                              |                4 |              5 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/Next_Dx                                  | RESET_IBUF                              |                2 |              8 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/Next_Dy                                  | RESET_IBUF                              |                2 |              8 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/Next_Status                              | RESET_IBUF                              |                3 |              8 |
+|  CLK_IBUF_BUFG | MicroProcessor/DecCountAndDOT0_reg[3][0]           | RESET_IBUF                              |                2 |              8 |
+|  CLK_IBUF_BUFG | MicroProcessor/DecCountAndDOT2_reg[3][0]           | RESET_IBUF                              |                2 |              8 |
+|  CLK_IBUF_BUFG | MicroProcessor/CurrRegB[7]_i_1_n_0                 | RESET_IBUF                              |                3 |              8 |
+|  CLK_IBUF_BUFG | MicroProcessor/CurrRegA[7]_i_1_n_0                 | RESET_IBUF                              |                4 |              8 |
+|  CLK_IBUF_BUFG | MD/TR/MouseClkFilter[7]_i_1_n_0                    |                                         |                2 |              8 |
+|  CLK_IBUF_BUFG | MicroProcessor/InterruptRate_reg[7][0]             | RESET_IBUF                              |                2 |              8 |
+|  CLK_IBUF_BUFG | MD/TR/R/Next_MSCodeShiftReg                        | RESET_IBUF                              |                3 |              8 |
+|  CLK_IBUF_BUFG | MicroProcessor/NextBusDataOut                      | RESET_IBUF                              |                1 |              8 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/MouseX_reg[0]                            |                                         |                3 |              9 |
+|  CLK_IBUF_BUFG |                                                    | SS/Bit17Counter/count_value[16]_i_1_n_0 |                4 |             16 |
+|  CLK_IBUF_BUFG | MD/TR/T/Curr_SendCounter[15]_i_1_n_0               | RESET_IBUF                              |                7 |             16 |
+|  CLK_IBUF_BUFG |                                                    |                                         |                9 |             17 |
+|  CLK_IBUF_BUFG | MD/TR/MSM/Next_Counter                             | RESET_IBUF                              |                9 |             24 |
+|  CLK_IBUF_BUFG | TIME/TargetReached1                                | RESET_IBUF                              |                9 |             32 |
+|  CLK_IBUF_BUFG | TIME/Timer                                         | MicroProcessor/Timer_reg[31]            |                8 |             32 |
+|  CLK_IBUF_BUFG |                                                    | RESET_IBUF                              |               40 |             83 |
++----------------+----------------------------------------------------+-----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     8 |
+| 5      |                     1 |
+| 8      |                    11 |
+| 9      |                     1 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

@@ -1,0 +1,7 @@
+Running: xsim.dir/MouseDriverSimu_behav/xsimk.exe -simmode gui -wdb MouseDriverSimu_behav.wdb -simrunnum 0 -socket 55159
+Design successfully loaded
+Design Loading Memory Usage: 9340 KB (Peak: 9340 KB)
+Design Loading CPU Usage: 218 ms
+Simulation completed
+Simulation Memory Usage: 10044 KB (Peak: 10044 KB)
+Simulation CPU Usage: 358 ms

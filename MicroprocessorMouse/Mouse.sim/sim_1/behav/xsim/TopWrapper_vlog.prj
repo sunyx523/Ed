@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Mouse.srcs/sources_1/new/ALU.v" \
+"../../../../Mouse.srcs/sources_1/new/GenericCounter.v" \
+"../../../../Mouse.srcs/sources_1/new/LED.v" \
+"../../../../Mouse.srcs/sources_1/new/MouseDriver.v" \
+"../../../../Mouse.srcs/sources_1/new/MouseMasterSM.v" \
+"../../../../Mouse.srcs/sources_1/new/MouseReceiver.v" \
+"../../../../Mouse.srcs/sources_1/new/MouseTransceiver.v" \
+"../../../../Mouse.srcs/sources_1/new/MouseTransmitter.v" \
+"../../../../Mouse.srcs/sources_1/new/Muliplexer_4way.v" \
+"../../../../Mouse.srcs/sources_1/new/Processor.v" \
+"../../../../Mouse.srcs/sources_1/new/RAM.v" \
+"../../../../Mouse.srcs/sources_1/new/ROM.v" \
+"../../../../Mouse.srcs/sources_1/new/Seg7Display.v" \
+"../../../../Mouse.srcs/sources_1/new/SevenSeg.v" \
+"../../../../Mouse.srcs/sources_1/new/Timer.v" \
+"../../../../Mouse.srcs/sources_1/new/TopWrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

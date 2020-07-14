@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../SnakeGame.srcs/sources_1/imports/new/Generic_counter.v" \
+"../../../../SnakeGame.srcs/sources_1/imports/new/Muliplexer_4way.v" \
+"../../../../SnakeGame.srcs/sources_1/new/Score.v" \
+"../../../../SnakeGame.srcs/sources_1/imports/new/Seg7Display.v" \
+"../../../../SnakeGame.srcs/sim_1/new/ScoreCounter_simulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

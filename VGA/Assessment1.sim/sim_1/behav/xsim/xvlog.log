@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/edinburgh/DigitalSystemDesign/Assessment1/Assessment1.srcs/sources_1/new/Generic_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Generic_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/edinburgh/DigitalSystemDesign/Assessment1/Assessment1.srcs/sources_1/new/VGA_Interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_Interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/edinburgh/DigitalSystemDesign/Assessment1/Assessment1.srcs/sim_1/new/VGA_Simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_Simulation

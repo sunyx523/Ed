@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Mouse.srcs/sources_1/new/MouseTransmitter.v" \
+"../../../../Mouse.srcs/sim_1/new/TSimulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

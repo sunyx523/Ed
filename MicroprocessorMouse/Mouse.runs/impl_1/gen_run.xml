@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1584091424">
+  <File Type="PWROPT-DCP" Name="TopWrapper_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="TopWrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TopWrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="TopWrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TopWrapper_reports.tcl"/>
+  <File Type="BG-DRC" Name="TopWrapper.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="TopWrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="TopWrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="TopWrapper.hwdef"/>
+  <File Type="OPT-DCP" Name="TopWrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="TopWrapper_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="TopWrapper_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="TopWrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="TopWrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="TopWrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="TopWrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="TopWrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TopWrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TopWrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TopWrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="TopWrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TopWrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="TopWrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TopWrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="TopWrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="TopWrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="TopWrapper_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="TopWrapper.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="TopWrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TopWrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="TopWrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TopWrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="TopWrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TopWrapper_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="TopWrapper.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="TopWrapper_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="TopWrapper.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TopWrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="TopWrapper.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TopWrapper_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="TopWrapper.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TopWrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TopWrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TopWrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TopWrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TopWrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TopWrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TopWrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TopWrapper_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TopWrapper.vdi"/>
+  <File Type="ROUTE-CLK" Name="TopWrapper_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TopWrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TopWrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TopWrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TopWrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TopWrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="TopWrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="TopWrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TopWrapper.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="TopWrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="TopWrapper.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GenericCounter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LED.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MouseDriver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MouseMasterSM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MouseReceiver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MouseTransceiver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MouseTransmitter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Muliplexer_4way.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Processor.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Seg7Display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SevenSeg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Timer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TopWrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TopWrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/MouseConstraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

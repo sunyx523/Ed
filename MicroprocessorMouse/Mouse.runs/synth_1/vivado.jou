@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 13 09:23:49 2020
+# Process ID: 8980
+# Current directory: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.runs/synth_1
+# Command line: vivado.exe -log TopWrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopWrapper.tcl
+# Log file: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.runs/synth_1/TopWrapper.vds
+# Journal file: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopWrapper.tcl -notrace

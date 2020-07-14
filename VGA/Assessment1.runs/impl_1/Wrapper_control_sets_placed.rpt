@@ -1,0 +1,84 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Oct 29 20:45:01 2018
+| Host         : SUN-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
+| Design       : Wrapper
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |   104 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              69 |           43 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              77 |           26 |
+| Yes          | No                    | No                     |             102 |           35 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+-------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|         Clock Signal         |                  Enable Signal                  |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++------------------------------+-------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG               |                                                 | VI/CounterH/HS_reg                                |                1 |              1 |
+|  CLK_IBUF_BUFG               |                                                 | VI/CounterV/VS_reg                                |                1 |              1 |
+|  count_value_reg[11]_i_2_n_0 |                                                 |                                                   |                8 |              8 |
+|  VI/CounterPixal/Trigger_out | VI/CounterH/count_value_reg[0]_0                |                                                   |                3 |              9 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterY0/count_value[8]_i_1__4_n_0 |                                                   |                3 |              9 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterY1/count_value[8]_i_1__1_n_0 |                                                   |                3 |              9 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterY2/count_value[8]_i_1__2_n_0 |                                                   |                3 |              9 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterY3/count_value[8]_i_1__3_n_0 |                                                   |                3 |              9 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterX2/count_value[9]_i_1__1_n_0 |                                                   |                3 |             10 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterX0/count_value[9]_i_1__3_n_0 |                                                   |                4 |             10 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterX3/count_value[9]_i_1__2_n_0 |                                                   |                4 |             10 |
+|  count_value_reg[11]_i_2_n_0 | SL/counters/CounterX1/count_value[9]_i_1__0_n_0 |                                                   |                4 |             10 |
+|  VI/CounterPixal/Trigger_out |                                                 |                                                   |                4 |             11 |
+|  count_value_reg[11]_i_2_n_0 |                                                 | SL/counters/CounterColour/count_value[11]_i_1_n_0 |                4 |             12 |
+|  CLK_IBUF_BUFG               | VI/E[0]                                         |                                                   |                5 |             17 |
+|  CLK_IBUF_BUFG               |                                                 | SL/counters/CounterSLOW/count_value[19]_i_1_n_0   |                5 |             19 |
+|  CLK_IBUF_BUFG               |                                                 | VI/CounterV/ADDRV_reg[0]_rep__0                   |               15 |             44 |
+|  CLK_IBUF_BUFG               |                                                 |                                                   |               31 |             50 |
++------------------------------+-------------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 8      |                     1 |
+| 9      |                     5 |
+| 10     |                     4 |
+| 11     |                     1 |
+| 12     |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+

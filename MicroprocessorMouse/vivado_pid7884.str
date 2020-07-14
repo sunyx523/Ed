@@ -1,0 +1,263 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 7884
+License: Customer
+
+Current time: 	Wed Feb 26 10:28:19 GMT 2020
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 7
+OS Version: 6.1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 2 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Vivado2017.4/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/Vivado2017.4/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	SUN
+User home directory: C:/Users/SUN
+User working directory: E:/edinburgh/DigitalSystemDesign/MouseNew
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado2017.4/Vivado
+HDI_APPROOT: D:/Vivado2017.4/Vivado/2017.4
+RDI_DATADIR: D:/Vivado2017.4/Vivado/2017.4/data
+RDI_BINDIR: D:/Vivado2017.4/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/SUN/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/SUN/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/SUN/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/Vivado2017.4/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	E:/edinburgh/DigitalSystemDesign/MouseNew/vivado.log
+Vivado journal file location: 	E:/edinburgh/DigitalSystemDesign/MouseNew/vivado.jou
+Engine tmp dir: 	E:/edinburgh/DigitalSystemDesign/MouseNew/.Xil/Vivado-7884-SUN-PC
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 501 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 44 MB (+43990kb) [00:00:11]
+// [Engine Memory]: 493 MB (+365378kb) [00:00:11]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: E:\edinburgh\DigitalSystemDesign\MouseNew\Mouse.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 61 MB (+15037kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 501 MB. GUI used memory: 32 MB. Current time: 2/26/20 10:28:21 AM GMT
+// [Engine Memory]: 520 MB (+2692kb) [00:00:20]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 572 MB (+26680kb) [00:00:22]
+// Tcl Message: open_project E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2017.4/Vivado/2017.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 791.586 ; gain = 79.152 
+// Project name: Mouse; location: E:/edinburgh/DigitalSystemDesign/MouseNew; part: xc7a35tcpg236-1
+// [GUI Memory]: 67 MB (+2948kb) [00:00:29]
+// [Engine Memory]: 600 MB (+183kb) [00:00:29]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopWrapper (TopWrapper.v)]", 1); // B (D, cj)
+closeMainWindow("Mouse - [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.xpr] - Vivado 2017.4"); // cj
+// x (cj): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+dismissDialog("Exit Vivado"); // x (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// Elapsed time: 13 seconds
+setFileChooser("E:/edinburgh/DigitalSystemDesign/DSD4-master/DSD4-master/IR and Mouse/IR and Mouse.xpr");
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 605 MB. GUI used memory: 41 MB. Current time: 2/26/20 10:29:14 AM GMT
+// Opening Vivado Project: E:/edinburgh/DigitalSystemDesign/DSD4-master/DSD4-master/IR and Mouse/IR and Mouse.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {E:/edinburgh/DigitalSystemDesign/DSD4-master/DSD4-master/IR and Mouse/IR and Mouse.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2017.4/Vivado/2017.4/data/ip'. 
+// Project name: IR and Mouse; location: E:/edinburgh/DigitalSystemDesign/DSD4-master/DSD4-master/IR and Mouse; part: xc7a35ticpg236-1L
+// 'i' command handler elapsed time: 21 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 801.777 ; gain = 4.469 
+// [GUI Memory]: 79 MB (+9373kb) [00:01:15]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 30 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+// PAPropertyPanels.initPanels (MouseInterface.v) elapsed time: 0.2s
+// [GUI Memory]: 84 MB (+529kb) [00:02:13]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v)]", 7, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v)]", 7, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("MouseInterface.v", 271, 73); // cd (w, cj)
+// [Engine Memory]: 637 MB (+7054kb) [00:02:15]
+// Elapsed time: 32 seconds
+selectCodeEditor("MouseInterface.v", 134, 253); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 143, 226); // cd (w, cj)
+// [GUI Memory]: 89 MB (+982kb) [00:03:04]
+// Elapsed time: 18 seconds
+selectCodeEditor("MouseInterface.v", 137, 221); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 144, 218); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 177, 190); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 157, 196); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 139, 204); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 139, 204, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseInterface.v", 158, 262); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 158, 262, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseInterface.v", 191, 220); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 180, 278); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 193, 205); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 193, 205); // cd (w, cj)
+// Elapsed time: 18 seconds
+selectCodeEditor("MouseInterface.v", 175, 163); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 175, 163, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseInterface.v", 175, 163); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 170, 177); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 169, 168); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 169, 168); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 169, 168, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseInterface.v", 153, 201); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 152, 189); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 152, 189, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseInterface.v", 155, 311); // cd (w, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v), Transceiver : MouseTransceiver (MouseTransceiver.v)]", 8); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v), Transceiver : MouseTransceiver (MouseTransceiver.v)]", 8); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v), Transceiver : MouseTransceiver (MouseTransceiver.v)]", 8); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v), Transceiver : MouseTransceiver (MouseTransceiver.v)]", 8, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v), Transceiver : MouseTransceiver (MouseTransceiver.v)]", 8, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [GUI Memory]: 100 MB (+6825kb) [00:04:00]
+selectCodeEditor("MouseTransceiver.v", 234, 178); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("MouseTransceiver.v", 165, 141); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 165, 141, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("MouseTransceiver.v", 483, 423); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 362, 337); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 657 MB. GUI used memory: 46 MB. Current time: 2/26/20 10:33:06 AM GMT
+// [Engine Memory]: 673 MB (+3988kb) [00:09:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 673 MB. GUI used memory: 45 MB. Current time: 2/26/20 11:03:06 AM GMT
+// Elapsed time: 2503 seconds
+selectCodeEditor("MouseTransceiver.v", 194, 109); // cd (w, cj)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MouseInterface.v", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MouseTransceiver.v", 2); // k (j, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("MouseTransceiver.v", 102, 258); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 102, 258, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseTransceiver.v", 163, 217); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 163, 217, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("MouseTransceiver.v", 255, 129); // cd (w, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v), Transceiver : MouseTransceiver (MouseTransceiver.v)]", 8); // B (D, cj)
+// Elapsed time: 27 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v)]", 7); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 4); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 4); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MouseInterfaceSim (MouseInterfaceSim.v)]", 12); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, MouseInterfaceSim (MouseInterfaceSim.v)]", 12); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 11); // B (D, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 673 MB. GUI used memory: 42 MB. Current time: 2/26/20 11:33:07 AM GMT
+// Elapsed time: 1438 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v), Microprocessor : Processor (Processor.v)]", 13); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v), Microprocessor : Processor (Processor.v)]", 13); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v), IR : IR_Transmitter_Interface (IR_Transmitter_Interface.v)]", 16); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v), IR : IR_Transmitter_Interface (IR_Transmitter_Interface.v)]", 16); // B (D, cj)
+// Elapsed time: 95 seconds
+selectCodeEditor("MouseTransceiver.v", 593, 196); // cd (w, cj)
+// Elapsed time: 251 seconds
+selectCodeEditor("MouseTransceiver.v", 604, 193); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 276, 227); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 146, 234); // cd (w, cj)
+selectCodeEditor("MouseTransceiver.v", 146, 234, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 664 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 11); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 11); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1); // B (D, cj)
+// Elapsed time: 65 seconds
+selectCodeEditor("MouseTransceiver.v", 642, 336); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("MouseTransceiver.v", 559, 214); // cd (w, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_processor (IR_processor.v)]", 2); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BUTTON_COMMAND (BUTTON_COMMAND.v)]", 8, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BUTTON_COMMAND (BUTTON_COMMAND.v)]", 8, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("BUTTON_COMMAND.v", 314, 211); // cd (w, cj)
+// Elapsed time: 53 seconds
+selectCodeEditor("BUTTON_COMMAND.v", 570, 174); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("Wrapper.v", 362, 168); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), MicroProcessor : Processor (Processor.v)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), MicroProcessor : Processor (Processor.v)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("Processor.v", 204, 110); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v)]", 8, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v), Mouse : MouseInterface (MouseInterface.v)]", 8, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("MouseInterface.v", 260, 191); // cd (w, cj)
+selectCodeEditor("MouseInterface.v", 261, 192); // cd (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Wrapper (Wrapper.v)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("Wrapper.v", 308, 203); // cd (w, cj)
+selectCodeEditor("Wrapper.v", 308, 203, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("Wrapper.v", 308, 203); // cd (w, cj)
+// Elapsed time: 33 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // B (D, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 673 MB. GUI used memory: 44 MB. Current time: 2/26/20 12:03:07 PM GMT

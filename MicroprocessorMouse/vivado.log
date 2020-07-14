@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Feb 27 09:40:29 2020
+# Process ID: 1408
+# Current directory: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9076 E:\edinburgh\DigitalSystemDesign\MicroprocessorMouse\Mouse.xpr
+# Log file: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/vivado.log
+# Journal file: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2017.4/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 790.875 ; gain = 91.402
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close [ open E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.srcs/sources_1/new/MouseDriver.v w ]
+add_files E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.srcs/sources_1/new/MouseDriver.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 27 21:19:46 2020...

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Assessment1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../Assessment1.srcs/sources_1/new/Generic_counter.v" \
+"../../../../Assessment1.srcs/sources_1/new/Location_counter.v" \
+"../../../../Assessment1.srcs/sources_1/new/SomeLogic.v" \
+"../../../../Assessment1.srcs/sources_1/new/VGA_Interface.v" \
+"../../../../Assessment1.srcs/sources_1/new/Wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

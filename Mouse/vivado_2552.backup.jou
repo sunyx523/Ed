@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jan 21 14:14:27 2020
+# Process ID: 2552
+# Current directory: E:/edinburgh/DigitalSystemDesign/Mouse
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7752 E:\edinburgh\DigitalSystemDesign\Mouse\Mouse.xpr
+# Log file: E:/edinburgh/DigitalSystemDesign/Mouse/vivado.log
+# Journal file: E:/edinburgh/DigitalSystemDesign/Mouse\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/edinburgh/DigitalSystemDesign/Mouse/Mouse.xpr
+update_compile_order -fileset sources_1
+close [ open E:/edinburgh/DigitalSystemDesign/Mouse/Mouse.srcs/sources_1/new/MouseTransceiver.v w ]
+add_files E:/edinburgh/DigitalSystemDesign/Mouse/Mouse.srcs/sources_1/new/MouseTransceiver.v
+update_compile_order -fileset sources_1

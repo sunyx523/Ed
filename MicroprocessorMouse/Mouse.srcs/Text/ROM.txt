@@ -1,0 +1,13 @@
+00  // BEGIN MOUSE - Read Mouse Status into A
+A0
+02  // Store Mouse Status into LEDs
+C0
+00  // Read Mouse X into A
+A1
+01  // Read Mouse Y into B
+A2
+02  // Write Mouse X into 7-Seg
+D1
+03  // Write Mouse Y into 7-Seg
+D0
+08

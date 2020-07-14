@@ -1,0 +1,87 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Thu Nov 29 14:25:42 2018
+| Host         : SUN-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Top_Wrapper_control_sets_placed.rpt
+| Design       : Top_Wrapper
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    56 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              66 |           30 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             386 |          115 |
+| Yes          | No                    | No                     |              25 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             363 |          149 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+|               Clock Signal               |               Enable Signal               |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++------------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG                           |                                           | VGAW/VI/CounterH/HS_reg                   |                1 |              1 |
+|  CLK_IBUF_BUFG                           |                                           | VGAW/VI/CounterV/VS_reg                   |                1 |              1 |
+|  CLK_IBUF_BUFG                           | S/CounterScore0/E[0]                      | RESET_IBUF                                |                2 |              4 |
+|  CLK_IBUF_BUFG                           | MSM/E[0]                                  | RESET_IBUF                                |                3 |              7 |
+|  CLK_IBUF_BUFG                           | SC/EM/CounterEagle/EagleState_Y_reg[0][0] | RESET_IBUF                                |                3 |              7 |
+|  CLK_IBUF_BUFG                           | SC/HM/Speed/SnakeState_Y0_reg[0][0]       | RESET_IBUF                                |                3 |              7 |
+|  CLK_IBUF_BUFG                           | TG/Target_Y[6]_i_1_n_0                    | RESET_IBUF                                |                2 |              7 |
+|  CLK_IBUF_BUFG                           | NSM/E[0]                                  | RESET_IBUF                                |                4 |              8 |
+|  CLK_IBUF_BUFG                           | SC/EM/CounterEagle/E[0]                   | RESET_IBUF                                |                3 |              8 |
+|  CLK_IBUF_BUFG                           | TG/Target_X[7]_i_1_n_0                    | RESET_IBUF                                |                4 |              8 |
+|  VGAW/VI/CounterPixal/count_value_reg[8] | VGAW/VI/CounterH/count_value_reg[0]_0     |                                           |                3 |              9 |
+|  CLK_IBUF_BUFG                           | SC/RT/E[0]                                | RESET_IBUF                                |                3 |             10 |
+|  VGAW/VI/CounterPixal/count_value_reg[8] |                                           |                                           |                4 |             11 |
+|  CLK_IBUF_BUFG                           |                                           | S/Bit17Counter/count_value[16]_i_1__0_n_0 |                4 |             16 |
+|  CLK_IBUF_BUFG                           | VGAW/VI/FrameCount                        |                                           |                4 |             16 |
+|  CLK_IBUF_BUFG                           | MSM/count_value_reg[0][0]                 | RESET_IBUF                                |                6 |             27 |
+|  CLK_IBUF_BUFG                           |                                           |                                           |               26 |             55 |
+|  CLK_IBUF_BUFG                           |                                           | VGAW/VI/CounterV/COLOUR_OUT_reg[0]        |               36 |             63 |
+|  CLK_IBUF_BUFG                           | SC/HM/Speed/E[0]                          | RESET_IBUF                                |              116 |            270 |
+|  CLK_IBUF_BUFG                           |                                           | RESET_IBUF                                |               73 |            305 |
++------------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 4      |                     1 |
+| 7      |                     4 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Feb 27 09:38:08 2020
+# Process ID: 2216
+# Current directory: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2064 E:\edinburgh\DigitalSystemDesign\MicroprocessorMouse\MicroprocessorMouse.xpr
+# Log file: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/vivado.log
+# Journal file: E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/MicroprocessorMouse.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

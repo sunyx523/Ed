@@ -1,0 +1,506 @@
+
+*** Running vivado
+    with args -log TopWrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopWrapper.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source TopWrapper.tcl -notrace
+Command: synth_design -top TopWrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5296 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 378.762 ; gain = 94.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopWrapper' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/TopWrapper.v:27]
+INFO: [Synth 8-638] synthesizing module 'MouseTransceiver' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:26]
+	Parameter MouseLimitX bound to: 8'b10100000 
+	Parameter MouseLimitY bound to: 8'b01111000 
+INFO: [Synth 8-638] synthesizing module 'MouseTransmitter' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransmitter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MouseTransmitter' (1#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransmitter.v:23]
+INFO: [Synth 8-638] synthesizing module 'MouseReceiver' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseReceiver.v:24]
+WARNING: [Synth 8-6014] Unused sequential element Curr_TimeoutCounter_reg was removed.  [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseReceiver.v:62]
+INFO: [Synth 8-256] done synthesizing module 'MouseReceiver' (2#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseReceiver.v:24]
+INFO: [Synth 8-638] synthesizing module 'MouseMasterSM' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseMasterSM.v:24]
+INFO: [Synth 8-256] done synthesizing module 'MouseMasterSM' (3#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseMasterSM.v:24]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:200]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.runs/synth_1/.Xil/Vivado-8400-SUN-PC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (4#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.runs/synth_1/.Xil/Vivado-8400-SUN-PC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Debug'. This will prevent further optimization [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:200]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'MSM'. This will prevent further optimization [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:129]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'R'. This will prevent further optimization [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:107]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'T'. This will prevent further optimization [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:84]
+INFO: [Synth 8-256] done synthesizing module 'MouseTransceiver' (5#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/MouseTransceiver.v:26]
+INFO: [Synth 8-638] synthesizing module 'GenericCounter' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/GenericCounter.v:22]
+	Parameter COUNTER_WIDTH bound to: 17 - type: integer 
+	Parameter COUNTER_MAX bound to: 99999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GenericCounter' (6#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/GenericCounter.v:22]
+WARNING: [Synth 8-350] instance 'Bit17Counter' of module 'GenericCounter' requires 5 connections, but only 4 given [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/TopWrapper.v:65]
+INFO: [Synth 8-638] synthesizing module 'GenericCounter__parameterized0' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/GenericCounter.v:22]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter COUNTER_MAX bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GenericCounter__parameterized0' (6#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/GenericCounter.v:22]
+WARNING: [Synth 8-350] instance 'Strobe' of module 'GenericCounter' requires 5 connections, but only 3 given [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/TopWrapper.v:76]
+INFO: [Synth 8-638] synthesizing module 'Seg7Display' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/Seg7Display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Seg7Display' (7#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/Seg7Display.v:23]
+INFO: [Synth 8-638] synthesizing module 'Muliplexer_4way' [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/Muliplexer_4way.v:22]
+INFO: [Synth 8-226] default block is never used [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/Muliplexer_4way.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Muliplexer_4way' (8#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/Muliplexer_4way.v:22]
+INFO: [Synth 8-256] done synthesizing module 'TopWrapper' (9#1) [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/TopWrapper.v:27]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 427.195 ; gain = 142.609
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Strobe:RESET to constant 0 [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/TopWrapper.v:76]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 427.195 ; gain = 142.609
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.runs/synth_1/.Xil/Vivado-8400-SUN-PC/dcp1/ila_0_in_context.xdc] for cell 'TR/Debug'
+Finished Parsing XDC File [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.runs/synth_1/.Xil/Vivado-8400-SUN-PC/dcp1/ila_0_in_context.xdc] for cell 'TR/Debug'
+Parsing XDC File [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/constrs_1/new/MouseConstraint.xdc]
+Finished Parsing XDC File [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/constrs_1/new/MouseConstraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/constrs_1/new/MouseConstraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopWrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopWrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 749.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 749.285 ; gain = 464.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 749.285 ; gain = 464.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for TR/Debug. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 749.285 ; gain = 464.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_State_reg' in module 'MouseTransmitter'
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Next_MouseDataOutWE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_MouseClkOutWE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_State_reg' in module 'MouseReceiver'
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_ByteReceived" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Curr_State_reg' in module 'MouseMasterSM'
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Next_SendInterrupt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_ReadEnable" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_ByteToSend" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_SendByte" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_Counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             0100 |                             0100
+                 iSTATE4 |                             0101 |                             0101
+                 iSTATE5 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE8 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_State_reg' using encoding 'sequential' in module 'MouseTransmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_State_reg' using encoding 'sequential' in module 'MouseReceiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0000 |                             0000
+                 iSTATE0 |                             0001 |                             0001
+                 iSTATE1 |                             0010 |                             0010
+                 iSTATE2 |                             0011 |                             0011
+                 iSTATE3 |                             0100 |                             0100
+                 iSTATE4 |                             0101 |                             0101
+                 iSTATE5 |                             0110 |                             0110
+                 iSTATE6 |                             0111 |                             0111
+                 iSTATE7 |                             1000 |                             1000
+                 iSTATE8 |                             1001 |                             1001
+                 iSTATE9 |                             1010 |                             1010
+                iSTATE10 |                             1011 |                             1011
+                iSTATE11 |                             1100 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Curr_State_reg' using encoding 'sequential' in module 'MouseMasterSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 749.285 ; gain = 464.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	  13 Input     24 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  10 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MouseTransmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	  10 Input     16 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 8     
+Module MouseReceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 4     
+Module MouseMasterSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	  13 Input     24 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 4     
+	  13 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 9     
+Module MouseTransceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+Module GenericCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+Module GenericCounter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module Muliplexer_4way 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element Strobe/Trigger_out_reg was removed.  [E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.srcs/sources_1/new/GenericCounter.v:57]
+INFO: [Synth 8-3886] merging instance 'TR/MSM/Curr_ByteToSend_reg[0]' (FDRE) to 'TR/MSM/Curr_ByteToSend_reg[1]'
+INFO: [Synth 8-3886] merging instance 'TR/MSM/Curr_ByteToSend_reg[1]' (FDRE) to 'TR/MSM/Curr_ByteToSend_reg[3]'
+INFO: [Synth 8-3886] merging instance 'TR/MSM/Curr_ByteToSend_reg[2]' (FDRE) to 'TR/MSM/Curr_ByteToSend_reg[4]'
+INFO: [Synth 8-3886] merging instance 'TR/MSM/Curr_ByteToSend_reg[4]' (FDRE) to 'TR/MSM/Curr_ByteToSend_reg[5]'
+INFO: [Synth 8-3886] merging instance 'TR/MSM/Curr_ByteToSend_reg[5]' (FDRE) to 'TR/MSM/Curr_ByteToSend_reg[6]'
+INFO: [Synth 8-3886] merging instance 'TR/MSM/Curr_ByteToSend_reg[6]' (FDRE) to 'TR/MSM/Curr_ByteToSend_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (TR/\MouseY_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (MouseY_reg[7]) is unused and will be removed from module MouseTransceiver.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 749.285 ; gain = 464.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 759.676 ; gain = 475.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 759.988 ; gain = 475.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ila_0  |     1|
+|2     |BUFG   |     1|
+|3     |CARRY4 |    20|
+|4     |LUT1   |     5|
+|5     |LUT2   |    21|
+|6     |LUT3   |    16|
+|7     |LUT4   |    91|
+|8     |LUT5   |    22|
+|9     |LUT6   |    47|
+|10    |MUXF7  |     2|
+|11    |FDRE   |   151|
+|12    |FDSE   |     6|
+|13    |IBUF   |     2|
+|14    |IOBUF  |     2|
+|15    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------------------------+------+
+|      |Instance       |Module                         |Cells |
++------+---------------+-------------------------------+------+
+|1     |top            |                               |   402|
+|2     |  TR           |MouseTransceiver               |   336|
+|3     |    T          |MouseTransmitter               |    88|
+|4     |    R          |MouseReceiver                  |    41|
+|5     |    MSM        |MouseMasterSM                  |   132|
+|6     |  Bit17Counter |GenericCounter                 |    28|
+|7     |  Strobe       |GenericCounter__parameterized0 |    19|
++------+---------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 780.652 ; gain = 173.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 780.652 ; gain = 496.066
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 780.652 ; gain = 497.793
+INFO: [Common 17-1381] The checkpoint 'E:/edinburgh/DigitalSystemDesign/MouseNew/Mouse.runs/synth_1/TopWrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopWrapper_utilization_synth.rpt -pb TopWrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 780.652 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 23 16:50:30 2020...

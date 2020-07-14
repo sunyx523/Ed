@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/edinburgh/DigitalSystemDesign/MicroprocessorMouse/Mouse.srcs/sim_1/new/TimerSimu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TimerSimu
